@@ -17,12 +17,12 @@ const Home = () => {
         </div>
 
         <div className="crypto-table">
-            <div className="table-layout">
+            <div className="table-layout text-white font-mono font-bold">
                 <p>#</p>
                 <p>Coins</p>
                 <p>Price</p>
-                <p>24H Change</p>
-                <p>Market Cap</p>
+                <p className="text-center">24H Change</p>
+                <p className="marketCap text-right">Market Cap</p>
             </div>
         </div>
     </div>
