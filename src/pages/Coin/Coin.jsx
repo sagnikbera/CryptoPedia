@@ -68,21 +68,22 @@ const Coin = () => {
   return (
     <div className="max-w-5xl mx-auto p-6">
       {/* Coin Header */}
-      <div className="flex items-center justify-between bg-white shadow-md rounded-2xl p-6 mb-8">
+      <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between bg-white shadow-md rounded-2xl p-6 mb-8 gap-4">
         <div className="flex items-center gap-4">
           <img
             src={coinData.image.large}
             alt={coinData.name}
             className="w-16 h-16 object-contain"
           />
-          <p className="text-2xl font-bold text-gray-800">
+          <p className="text-xl sm:text-2xl font-bold text-gray-800">
             {coinData.name}{" "}
             <span className="uppercase text-gray-500">({coinData.symbol})</span>
           </p>
         </div>
-        <p className="text-lg font-semibold text-gray-800">
+
+        <p className="text-base sm:text-lg ml-8 font-semibold text-gray-800">
           Crypto Market Rank:{" "}
-          <span className="text-2xl font-bold">
+          <span className="text-xl sm:text-2xl font-bold">
             #{coinData.market_cap_rank}
           </span>
         </p>

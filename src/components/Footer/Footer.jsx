@@ -17,7 +17,7 @@ const Footer = () => {
           rel="noopener noreferrer"
           className="flex items-center gap-2 text-blue-400 hover:text-blue-600 font-medium transition"
         >
-          <FaLinkedin className="text-lg sm:text-2xl" />
+          <FaLinkedin className="text-blue-500 text-lg sm:text-2xl" />
           Sagnik
         </a>
       </p>
