@@ -3,15 +3,17 @@ import Navbar from "./components/Navbar/Navbar";
 import { Routes , Route } from "react-router-dom";
 import Home from "./pages/Home/Home";
 import Coin from "./pages/Coin/Coin";
+import Footer from "./components/Footer/Footer";
 
 const App = () => {
   return (
-    <div className="app h-screen bg-gradient-to-b from-indigo-800 to-pink-700">
+    <div className="app h-full bg-gradient-to-b from-indigo-800 to-pink-700">
       <Navbar/>
       <Routes>
         <Route path="/" element={<Home/>}/>
-        <Route path="/coint/:coinId" element={<Coin/>}/>
+        <Route path="/coin/:coinId" element={<Coin/>}/>
       </Routes>
+      <Footer/>
     </div>
   );
 };
